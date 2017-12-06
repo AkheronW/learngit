@@ -13,13 +13,13 @@ git的配置文件有三个：
 ` git config [--local|--global|--system] --list `:查看当前生效的配置信息
 
 	git config user.name "Name" #省略global参数，默认Repository级别
-** 修改配置 **
+***修改配置***
 
 	git config [--local|--global|--system] --edit
-** 增加配置 ** 
+***增加配置*** 
 
 	git config [--local|--global|--system] -–add section.key value
-** 获取某一个配置 **
+***获取某一个配置***
 
 	git config [--local|--global|--system] --get section.key
 

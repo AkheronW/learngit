@@ -28,11 +28,11 @@
 
 #### 上述三个主要部分还可以由以下两个图表示
 
-![ ](/home/perfume/Desktop/note/image/git/three-parts-1.png  "three-parts1")
+![ ](./git/three-parts-1.png  "three-parts1")
 
 以及来自廖雪峰老师网站的图
 
-![ ](/home/perfume/Desktop/note/image/git/three-parts-2.jpg  "three-parts2")
+![ ](./git/three-parts-2.jpg  "three-parts2")
 
 #### git仓库中的文件状态
 

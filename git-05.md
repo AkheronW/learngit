@@ -15,5 +15,16 @@
 ```
 ### 分支的创建与合并
 ```
+# 分支查看
+	git branch # *号表示当前所在分支
 # 分支创建
+	git branch name
+# 分支切换
+	git checkout name
+# 分支切换+创建
+	git checkout -b name
+# 分支合并
+	git merge name
+# 分支删除
+	git branch -d name
 ```

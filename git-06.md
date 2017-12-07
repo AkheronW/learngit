@@ -25,3 +25,21 @@
 ```
 
 *如果同一个文件在多个本地库同时改动，在更新远程库时需要先更新本地仓库，手动解决冲突，再更新远程仓库。*
+### Tag
+```
+# tag可用于方便地记录开发版本
+# 创建tag
+	git tag <tagname> # tag所在分支最新一次提交
+	git tag <tagname> <commit id> # tag所在分支特定提交
+	git tag -a <tagname> -m <comment> <commit id> #带说明tag
+# 查看tag
+	git show <tagname>
+#推送到远程仓库
+	git push origin <tagname>
+	git push origin --tags #一次性推送所有尚未推送的本地标签
+# 本地删除tag
+	git tag -d <tagname>
+# 删除远程仓库tag 
+	1. git tag -d <tagname>
+	2. git push origin :refs/tags/<tagname>
+```

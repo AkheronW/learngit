@@ -1,2 +1,6 @@
 branch feature
+<<<<<<< HEAD
 branch master
+=======
+branch feature
+>>>>>>> feature

@@ -48,5 +48,35 @@
 ### Bug分支
 ```
 	git stash #保存当前工作区以及Index数据
-	
+	#创建新的分支，修复bug
+	git stash list #查看stash
+	git stash apply #恢复stash内容
+	git stash drop #删除stash
+	git stash pop #等效于上两条命令
+	#bug分支	
+	*master
+		|	*dev
+		|-------|
+		|	 	|
+		|---|	|
+		|---*	|	fix bug
+		|---|	|
+		*---|	|	merge bug fix
+		|		|
+```	
+> 通常在开发一个新功能时，不希望实验性质代码将主分支打乱，因此需要创建一个新的分支
+
+在未合并前，删除新分支
+```
+	git checkout -b feature-mars
+	#开发feature-mars功能
+	#开发完毕后
+	git checkout master
+	#需要删除feature-mars分支
+	git branch -d feature-mars
+	/***
+	error: The branch 'feature-mars' is not fully merged.
+	If you are sure you want to delete it, run 'git branch -D feature-mars'.
+	***/
+	git brand -D feature-mars #强行删除
 ```

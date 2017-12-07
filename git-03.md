@@ -33,6 +33,8 @@
 	git log -p -2
 	git log --stat # 显示额外的统计信息
 	git log --pretty=oneline # 每条日志显示为一行
+	git log --graph # 以图的形式表示分支
+	git log --author=xx # 显示特定用户的提交日志
 ```
 ### git diff
 ```

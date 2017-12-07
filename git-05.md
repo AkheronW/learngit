@@ -24,9 +24,29 @@
 # 分支切换+创建
 	git checkout -b name
 # 分支合并
-	git merge name #快速合并
+	git merge name 
+	# Fast Forward:直接将当前分支指向需要合并的另一个分支
+	git merge --no-ff name -m xxx # 禁用Fast Forward 模式，会在合并的时候产生一个新的提交，需要带-m参数说明这次提交
 # 分支删除
 	git branch -d name
 ```
 
 ### 分支冲突解决
+```
+			* master
+				|
+				|---*feature
+				|	    |
+				|	    * add readme.txt
+				|	    |
+  add readme.txt*	    |
+  				|	    |
+  				*--------  merge conflict #只能手动修改
+  				|
+```
+
+### Bug分支
+```
+	git stash #保存当前工作区以及Index数据
+	
+```

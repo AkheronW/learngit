@@ -24,7 +24,7 @@
 # 分支切换+创建
 	git checkout -b name
 # 分支合并
-	git merge name
+	git merge name #快速合并
 # 分支删除
 	git branch -d name
 ```
